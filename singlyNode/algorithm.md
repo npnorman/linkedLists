@@ -2,6 +2,7 @@
 
 ### basicObject
 
+````mermaid
 class BasicObject {
   int amount;
   BasicObject() : void
@@ -9,6 +10,7 @@ class BasicObject {
   setAmount(int amount) : void
   getAmount() : int
 }
+````
 
 basicObject | BasicObject() | BasicObject(int amount) | setAmount(int amount) | getAmount()
 -|-|-|-|-
