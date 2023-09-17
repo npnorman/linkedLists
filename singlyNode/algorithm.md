@@ -3,13 +3,14 @@
 ### basicObject
 
 ````mermaid
-class BasicObject {
-  int amount;
-  BasicObject() : void
-  BasicObject(int amount) : void
-  setAmount(int amount) : void
-  getAmount() : int
-}
+classDiagram
+  class BasicObject {
+    int amount;
+    +BasicObject() void
+    +BasicObject(int amount) void
+    +setAmount(int amount) void
+    +getAmount() int
+  }
 ````
 
 basicObject | BasicObject() | BasicObject(int amount) | setAmount(int amount) | getAmount()
