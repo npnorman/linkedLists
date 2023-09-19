@@ -48,7 +48,12 @@ class Node {
     return next;
 
   }//end getNext
-  
+
+  ~Node() {
+    //we use the destructor to delete off of the heap
+    std::cout << "I am deleted" << std::endl;
+  }//end destructor
+
   void setNext(Node* next) {
     //set next to input
     this->next = next;
@@ -69,6 +74,8 @@ int main() {
     node->setData(3);
     std::cout << "Modified Value: " << node->getData() << std::endl;
   
+    delete node;
+
   } else {
     //lets show two nodes linking together
     //first we store the first node so we dont lose track of it
@@ -85,6 +92,10 @@ int main() {
 
     std::cout << "{" << head->getData() << "," << head->getNext()->getData() << "," << head->getNext()->getNext()->getData() << "}" << std::endl;
 
+    //In cpp we must delete anything on the heap after we are done. (heap)
+    delete head->getNext()->getNext();
+    delete head->getNext();
+    delete head;
   }//end if
 
   return 0;
