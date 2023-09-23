@@ -20,7 +20,7 @@ classDiagram
         -countNode(Node temp) int
         +append(int data) void
         +pop() Node
-        +get(int index) Node
+        +get(int index) int
         +print() String
     }
 
