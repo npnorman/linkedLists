@@ -20,8 +20,8 @@ classDiagram
         -countNode(Node temp) int
         +append(int data) void
         +pop() Node
-        +get(int index) Node
-        +print() String
+        +get(int index) int
+        +print() void
     }
 
     LinkedList *-- Node
@@ -37,7 +37,7 @@ LinkedList | LinkedList() | getLength() | countNode(Node temp) | append(int data
 -|-|-|-|-|-|-|-
 Goal | construct a Linked list | get the length of a linked list | recursively find length of list| append a node to the end of the list | delete the last item in the list and return it | return data from node at specified index | print entire list in array format
 Input | | | Node|integer data | | integer index | 
-Output | LinkedList | length integer | integer| node added to list| integer | integer data | String
+Output | LinkedList | length integer | integer| node added to list| integer | integer data | 
 
 <br>
 
@@ -111,8 +111,8 @@ Output | LinkedList | length integer | integer| node added to list| integer | in
 	//print string "{}"
 //else
 	//print "{"
-	//go through each nodes next
-		//stop when the nodes next is null (base case, end of list)
+	//go through each node
+		//stop when the node is null (base case, end of list)
 		//print data
 		//if node's next is null
 			//print "}" to close the list
