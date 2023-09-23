@@ -111,7 +111,7 @@ Output | LinkedList | length integer | integer| node added to list| integer | in
 	//print string "{}"
 //else
 	//print "{"
-	//go through each nodes next
+	//go through each node
 		//stop when the node is null (base case, end of list)
 		//print data
 		//if node's next is null
