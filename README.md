@@ -39,12 +39,11 @@ To run these programs on a linux based command line, you will need to have insta
 * python3
 
 
-```c
-$ mkdir linkedLists //makes a new directory
-$ cd linkedLists //enters the directory
-linkedLists$ git clone https://github.com/npnorman/linkedLists.git //clones the repo
+```
+$ mkdir linkedLists
+$ cd linkedLists
+linkedLists$ git clone https://github.com/npnorman/linkedLists.git
 
 //once inside of a project (e.g. linkedLists/cpp/singlyLinkedList)
 linkedLists/cpp/singlyLinkedList$ make run //compiles all necessary files and runs in one step
-
 ```
